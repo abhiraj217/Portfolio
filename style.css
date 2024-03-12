@@ -1,0 +1,269 @@
+/*Fonts*/
+@font-face {
+  font-family: Fresh Pineapple;
+  src: url(./Resources/fonts/Fresh\ Pineapple.ttf);
+}
+
+@font-face {
+  font-family: Amaranth;
+  src: url(./Resources/fonts/Amaranth-Regular.ttf);
+}
+
+@font-face {
+  font-family: OneSignature;
+  src: url(./Resources/fonts/OneSignature.ttf);
+}
+
+
+
+#home-page {
+  background-image:linear-gradient(rgba(255, 253, 253, 0.9),rgba(255, 253, 253, 0.9)) ,url("./Resources/images/doodle_bg.jpg");
+  background-attachment: fixed;
+}
+
+/*color:#AEE1FF Light blue*/
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #FFFDFD !important;
+}
+
+h1 {
+  font-size: 1000px;
+}
+
+.nav-title {
+  font-family: OneSignature;
+  font-size: 2.6rem;
+  font-weight: 500;
+  color: #1a5276 !important;
+}
+
+.nav-item {
+  font-size: 1rem;
+}
+
+a.nav-link {
+  position: relative;
+}
+
+a.nav-link:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #1a5276;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+a.nav-link:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+/*==== HOME-PAGE ====*/
+
+.hm-1 {
+  padding-top: 15%;
+  font-size: 90px;
+  color: #1a5276;
+}
+
+.hm-head-1 {
+  font-size: 50px;
+  font-family: Fresh Pineapple;
+  word-spacing: 5px;
+  letter-spacing: 4px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.hm-head-2 {
+  font-size: 36px;
+  font-family: Amaranth;
+  color: #d3d0cb;
+  text-align: center;
+}
+
+.social-icons {
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+}
+
+.social-icon {
+  height: 45px !important;
+  width: 45px !important;
+  color: #32c766;
+  margin-bottom: 10px;
+}
+
+.social-li {
+  font-size: 100%;
+}
+
+.fa-github-square {
+  color: black;
+}
+
+.fa-linkedin-square {
+  color: #1a5276;
+}
+
+.fa-instagram {
+  color: #f20089;
+}
+
+.fa-file-text {
+  padding-right: 5px;
+}
+
+/*==== ANIMATION ====*/
+
+.ml15 .word {
+  display: inline-block;
+}
+
+.ml7 {
+  position: relative;
+  font-size: 1em;
+}
+.ml7 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.ml7 .letter {
+  transform-origin: 0 100%;
+  display: inline-block;
+}
+
+/*==== ABOUT-PAGE ====*/
+
+/*==== WEB ====*/
+
+.about-me--container {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.heading-about {
+  font-family: Amaranth;
+  color: #1a5276;
+  font-size: 4rem;
+  padding-top: 8%;
+  padding-bottom: 10%;
+}
+
+.about-ul {
+  list-style: none;
+  display: flex;
+}
+
+.about-skills {
+  font-size: 2.5rem;
+  font-family: Amaranth;
+  color: #1a5276;
+}
+
+.about-icon-ul {
+  list-style: none;
+  font-size: 90%;
+}
+
+.about-icon-ul .tech-icon svg {
+  padding: 1px;
+}
+
+.html,
+.css,
+.js,
+.react,
+.node,
+.dj,
+.mdb,
+.pdb {
+  padding-right: 0.9rem;
+}
+
+.icon-text {
+  font-size: 25px;
+  display: none;
+}
+
+.about-info p {
+  font-size: 1.2rem;
+  font-family: Amaranth;
+  padding-top: 1rem;
+}
+
+.heading-about ul li:first-child {
+  word-spacing: 5px;
+  letter-spacing: 4px;
+}
+
+.heading-about ul li:first-child::after {
+  content: "";
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  display: block;
+  height: 3px;
+  background-color: #aee1ff;
+}
+
+.stack-icons {
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+.stack-icons--md {
+  color: green;
+}
+
+.iconify {
+  width: 50px;
+  height: 50px;
+}
+
+.stack-icons--js {
+  width: 45px;
+  height: 45px;
+}
+
+.stack-icons--rdx {
+  width: 40px;
+  height: 40px;
+}
+
+/*==== Programing ====*/
+
+.pr-lg {
+  margin-top: 15%;
+  margin-bottom: 2%;
+}
+.footer-text {
+  color: rgb(127, 141, 170);
+  font-weight: 600;
+  font-size: 100%;
+}
+
+.cpp,
+.java,
+.python {
+  padding-right: 0.9rem;
+  font-size: 2.8rem;
+}
